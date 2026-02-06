@@ -1,0 +1,9 @@
+Manufacturer=Lattice Semiconductor
+PartNumber=ICE5LP2K-SG48ITR
+PartCategory=Integrated Circuit
+PackageCategory=Quad Flat No-Lead
+PinCount=49
+Version=1.1
+Released=2021-08-21 10:41:06
+Downloaded=2025-12-15 12:00:24
+3D=Y

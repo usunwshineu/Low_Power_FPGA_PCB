@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'ICE5LP2K_SG48ITR'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Lattice Semiconductor", "ICE5LP2K-SG48ITR" (!) = "", "QFN50P700X700X100-49N-D", "Quad Flat No-Lead", "842-ICE5LP2K-SG48ITR", "https://www.mouser.co.uk/ProductDetail/Lattice/ICE5LP2K-SG48ITR?qs=ZwKJWZfDtNgAWzMHJRGDug%3D%3D", "ICE5LP2K-SG48ITR", "https://www.arrow.com/en/products/ice5lp2k-sg48itr/lattice-semiconductor", "FPGA iCE40 Ultra Family 2048 Cells 40nm Technology 1.2V 48-Pin T/R", "http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/iCE/iCE40UltraFamilyDataSheet.pdf", "1 mm"
+END_PART
+
+END.

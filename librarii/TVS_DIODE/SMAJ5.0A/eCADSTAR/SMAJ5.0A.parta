@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_923496"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-10-05-10:00:51)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "SMAJ5_0A")
+)
+
+
+(pinAssign "ECS_923496"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-10-05-10:00:51)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portName "K") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "A") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_923496")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "SMAJ5_0A")
+)
+
+
+(part "SMAJ5_0A"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-10-05-10:00:51)
+    (utime 2023-03-07-16:10:32)
+    (packageRef "SMAJ5_0A")
+    (pinAssignRef "ECS_923496")
+    (interface
+        (port "1" (symbPinId 1) (portName "K") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "A") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "D")
+    (property "description" "BOURNS - SMAJ5.0A - TVS Diode, TRANSZORB SMAJ Series, Unidirectional, 5 V, 9.2 V, DO-214AC (SMA), 2 Pins")
+    (property "Manufacturer_Name" "Bourns")
+    (property "Manufacturer_Part_Number" "SMAJ5.0A")
+    (property "Mouser_Part_Number" "652-SMAJ5.0A")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/SMAJ5.0A?qs=A3H9pljuJ8RbLIvzFxDfUA%3D%3D")
+    (property "Arrow_Part_Number" "SMAJ5.0A")
+    (property "Arrow_Price/Stock" "https://www.arrow.com/en/products/smaj5.0a/bourns?utm_currency=USD&region=nac")
+    (property "Datasheet_Link" "https://detail.tmall.com/item.htm?id=548354020241&ali_refid=a3_430583_1006:1109983619:N:3Uw9kZ3UMDT/QL57nh1fXA==:ab063b49c94624768a940a913313feb0&ali_trackid=1_ab063b49c94624768a940a913313feb0&spm=a230r.1.14.1")
+    (property "compAreaTopHeight" 2.29)
+)
+
+

@@ -1,0 +1,9 @@
+Manufacturer=Bourns
+PartNumber=SMAJ5.0A
+PartCategory=Diode
+PackageCategory=Diodes Moulded
+PinCount=2
+Version=1.1
+Released=2020-10-05 10:00:51
+Downloaded=2026-01-29 19:22:21
+3D=Y

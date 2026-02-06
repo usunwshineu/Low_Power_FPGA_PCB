@@ -1,0 +1,18 @@
+.AT25FF081A-SSHN-B :1 ;The AT25FF081A is a member of our Standard class code and data storage solutions and is ideally suited for systems that need fast Read performance and low Sleep power for boot/code shadowing and Execute-in-Place tasks. Its low power consumption and wide operating voltage range are optimized for battery-powered designs.
+SOIC127P600X175-8N
+*STM IC
+*NGS
+*PLB 1="'CS'" 2="SO (I/O1)" 3="'WP (I'/O2)" 4="GND" 5="SI (I/O0)" 6="SCK" 7="'HOLD'/'RESET (I'/O3)" 8="VCC"
+*MXP 8
+*DFN AT25FF081A-SSHN-B
+~!Manufacturer_Name (Renesas Electronics)
+~!Manufacturer_Part_Number (AT25FF081A-SSHN-B)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://www.renesas.com/us/en/products/memory-logic/non-volatile-memory/spi-nor-flash/dual-quad-spi-memory/at25ff081a-8mbit-165-v-36-v-spi-serial-flash-memory-multi-io-support)
+~!Height (1.75mm)
+~!3D_Model (AT25FF081A-SSHN-B)
+AT25FF081A-SSHN-B
+1.1!U 2.1!U 3.1!U 4.1!U 8.1!U 7.1!U 6.1!U 5.1!U 

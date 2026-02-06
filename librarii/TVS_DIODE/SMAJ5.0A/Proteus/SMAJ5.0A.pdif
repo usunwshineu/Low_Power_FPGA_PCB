@@ -1,0 +1,119 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "SMAJ5.0A"
+   (description "BOURNS - SMAJ5.0A - TVS Diode, TRANSZORB SMAJ Series, Unidirectional, 5 V, 9.2 V, DO-214AC (SMA), 2 Pins")
+   (family "DIO")
+   (package "DIOM5026X229N")
+   (attribute "Datasheet Link" "https://detail.tmall.com/item.htm?id=548354020241&ali_refid=a3_430583_1006:1109983619:N:3Uw9kZ3UMDT/QL57nh1fXA==:ab063b49c94624768a940a913313feb0&ali_trackid=1_ab063b49c94624768a940a913313feb0&spm=a230r.1.14.1")
+   (attribute "Geometry.Height" "2.29mm")
+   (attribute "Manufacturer_Name" "Bourns")
+   (attribute "Manufacturer_Part_Number" "SMAJ5.0A")
+   (attribute "Mouser Part Number" "652-SMAJ5.0A")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/SMAJ5.0A?qs=A3H9pljuJ8RbLIvzFxDfUA%3D%3D")
+   (attribute "Arrow Part Number" "SMAJ5.0A")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/smaj5.0a/bourns?utm_currency=USD&region=nac")
+   (gate
+    (symbol "SMAJ5.0A")
+    (pin "K" 1 PS)
+    (pin "A" 2 PS)
+   )
+  )
+  (symbol "SMAJ5.0A"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 200 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 100 0) (pt 200 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 400 0) (pt 500 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (closed true) (pt 200 0) (pt 400 100) (pt 400 -100) (pt 200 0))
+   )
+   (terminal
+    (body (symbol "PINSHORT") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 140 10) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 60 10) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 600 0) (rot 0) (mir X) (visible true))
+    (name (pt 140 10) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 60 10) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "DIOM5026X229N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -3.4 1.645)
+      (pt 3.4 1.645)
+      (pt 3.4 -1.645)
+      (pt -3.4 -1.645)
+      (pt -3.4 1.645))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.52 1.298)
+      (pt 2.52 1.298)
+      (pt 2.52 -1.298)
+      (pt -2.52 -1.298)
+      (pt -2.52 1.298))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -2.52 0.522)
+      (pt -1.745 1.298))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 2.52 1.298)
+      (pt -2.825 1.298))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -2.52 -1.298)
+      (pt 2.52 -1.298))))
+   (leg 1 (pt -2.05 0) (padstack 0))
+   (leg 2 (pt 2.05 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.55 2.2 0 0 0))
+   )
+   (model "SMAJ5.0A.stp"
+    (euler 0 0 0)
+    (offset 0 0.15000000596046448 1.2999999523162842)
+   )
+  )
+ )
+)

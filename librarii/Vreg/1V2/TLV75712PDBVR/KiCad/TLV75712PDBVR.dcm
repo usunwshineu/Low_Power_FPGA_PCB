@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TLV75712PDBVR
+D 1A Low-Quiescent-Current Low-Dropout (LDO) Regulator
+K
+F http://www.ti.com/lit/gpn/tlv757p
+$ENDCMP
+#
+#End Doc Library

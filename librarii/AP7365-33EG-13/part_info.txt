@@ -1,0 +1,9 @@
+Manufacturer=Diodes Incorporated
+PartNumber=AP7365-33EG-13
+PartCategory=Power Supply
+PackageCategory=SOT223 (3-Pin)
+PinCount=4
+Version=3.1
+Released=2018-01-31 12:39:57
+Downloaded=2026-01-24 16:56:11
+3D=Y

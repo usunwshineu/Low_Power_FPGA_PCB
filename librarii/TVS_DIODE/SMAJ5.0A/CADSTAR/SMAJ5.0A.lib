@@ -1,0 +1,18 @@
+.SMAJ5.0A :1 ;BOURNS - SMAJ5.0A - TVS Diode, TRANSZORB SMAJ Series, Unidirectional, 5 V, 9.2 V, DO-214AC (SMA), 2 Pins
+DIOM5026X229N
+*STM D
+*NGS
+*PLB 1="K" 2="A"
+*MXP 2
+*DFN SMAJ5.0A
+~!Manufacturer_Name (Bourns)
+~!Manufacturer_Part_Number (SMAJ5.0A)
+~!Mouser Part Number (652-SMAJ5.0A)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Bourns/SMAJ5.0A?qs=A3H9pljuJ8RbLIvzFxDfUA%3D%3D)
+~!Arrow Part Number (SMAJ5.0A)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/smaj5.0a/bourns?utm_currency=USD&region=nac)
+~!Link Datasheet (https://detail.tmall.com/item.htm?id=548354020241&ali_refid=a3_430583_1006:1109983619:N:3Uw9kZ3UMDT/QL57nh1fXA==:ab063b49c94624768a940a913313feb0&ali_trackid=1_ab063b49c94624768a940a913313feb0&spm=a230r.1.14.1)
+~!Height (2.29mm)
+~!3D_Model (SMAJ5.0A)
+SMAJ5.0A
+1.1!U 2.1!U 

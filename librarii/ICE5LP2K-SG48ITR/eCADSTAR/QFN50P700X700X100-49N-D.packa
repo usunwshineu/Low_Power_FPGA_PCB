@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "ICE5LP2K-SG48ITR"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-02-04-11:25:09)
+    (mountForm default
+        (footprintRef "QFN50P700X700X100-49N-D")
+        (spec "System")
+    )
+)

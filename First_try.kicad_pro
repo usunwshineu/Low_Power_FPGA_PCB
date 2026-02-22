@@ -507,6 +507,9 @@
       "3.3": [
         "T1"
       ],
+      "Net-(FB1-Pad2)": [
+        "T7"
+      ],
       "unconnected-(J1-CC2-PadB5)": [
         "T7"
       ],

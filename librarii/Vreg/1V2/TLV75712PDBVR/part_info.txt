@@ -1,9 +1,0 @@
-Manufacturer=Texas Instruments
-PartNumber=TLV75712PDBVR
-PartCategory=Power Supply
-PackageCategory=SOT23 (5-Pin)
-PinCount=5
-Version=1.1
-Released=2021-08-08 09:36:28
-Downloaded=2026-01-24 17:36:04
-3D=Y

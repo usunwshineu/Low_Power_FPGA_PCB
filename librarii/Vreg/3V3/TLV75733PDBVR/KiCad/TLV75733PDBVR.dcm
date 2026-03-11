@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP TLV75733PDBVR
-D LDO Voltage Regulators 1A Low-IQ Small-Size Low-Dropout (LDO) Regulator 5-SOT-23 -40 to 125
-K
-F http://www.ti.com/lit/gpn/tlv757p
-$ENDCMP
-#
-#End Doc Library

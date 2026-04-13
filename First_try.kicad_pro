@@ -144,11 +144,11 @@
       },
       "teardrop_options": [
         {
-          "td_onpthpad": true,
+          "td_onpthpad": false,
           "td_onroundshapesonly": false,
           "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onvia": true
+          "td_onvia": false
         }
       ],
       "teardrop_parameters": [
@@ -242,7 +242,13 @@
       "mfg": "",
       "mpn": ""
     },
-    "layer_pairs": [],
+    "layer_pairs": [
+      {
+        "bottomLayer": 2,
+        "enabled": true,
+        "topLayer": 0
+      }
+    ],
     "layer_presets": [],
     "viewports": []
   },

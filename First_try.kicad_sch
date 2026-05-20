@@ -14059,12 +14059,6 @@
 		(uuid "18b87bd8-5860-4796-a523-69ba6158de26")
 	)
 	(junction
-		(at 237.49 162.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1956ee8b-aee2-4ea0-9f24-9cd9267caa4c")
-	)
-	(junction
 		(at 152.4 204.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -14539,6 +14533,12 @@
 		(uuid "b2379f0e-530c-47d2-af96-2bb2ea5277d0")
 	)
 	(junction
+		(at 240.03 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2536c04-f0a5-48cb-ba28-03ca9fb450a8")
+	)
+	(junction
 		(at 335.28 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -14846,16 +14846,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 162.56) (xy 245.11 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b0bf46b-933c-4ed7-b9ba-7bc95cf58d2e")
-	)
-	(wire
-		(pts
 			(xy 40.64 55.88) (xy 43.18 55.88)
 		)
 		(stroke
@@ -14993,16 +14983,6 @@
 			(type default)
 		)
 		(uuid "1b973e6d-170a-4030-be03-8d6f3c33ecd4")
-	)
-	(wire
-		(pts
-			(xy 259.08 162.56) (xy 259.08 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1bc0ac27-24ff-4b26-a252-d42c5bdfc8da")
 	)
 	(wire
 		(pts
@@ -15366,26 +15346,6 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 162.56) (xy 259.08 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a1847cb-0238-49b8-94ec-a894f819a15c")
-	)
-	(wire
-		(pts
-			(xy 236.22 154.94) (xy 237.49 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b5aa390-25e6-4d22-93ff-e08bb9e7ce57")
-	)
-	(wire
-		(pts
 			(xy 223.52 26.67) (xy 223.52 21.59)
 		)
 		(stroke
@@ -15673,6 +15633,16 @@
 			(type default)
 		)
 		(uuid "5822e412-73c7-4577-a3cf-f07ba2449065")
+	)
+	(wire
+		(pts
+			(xy 261.62 163.83) (xy 261.62 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58961133-a30d-4793-8453-1331fad084d0")
 	)
 	(wire
 		(pts
@@ -16096,6 +16066,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 163.83) (xy 261.62 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "717542ac-a821-4d86-bf01-3a195330de6e")
+	)
+	(wire
+		(pts
 			(xy 337.82 135.89) (xy 344.17 135.89)
 		)
 		(stroke
@@ -16143,16 +16123,6 @@
 			(type default)
 		)
 		(uuid "75dea04f-b6f5-4142-b712-037658329b5c")
-	)
-	(wire
-		(pts
-			(xy 231.14 162.56) (xy 237.49 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76788e67-7e52-4e36-828b-00c64bd29532")
 	)
 	(wire
 		(pts
@@ -16844,6 +16814,16 @@
 		)
 		(uuid "ad95340c-ad58-4d2b-a271-3ab62b330716")
 	)
+	(wire
+		(pts
+			(xy 233.68 163.83) (xy 240.03 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae00303b-55a3-47e8-a6a0-dbbc2866cd33")
+	)
 	(bus
 		(pts
 			(xy 138.43 283.21) (xy 138.43 203.2)
@@ -16916,6 +16896,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 156.21) (xy 240.03 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b77b1f33-d8ed-41a6-a29e-f47f939515ec")
+	)
+	(wire
+		(pts
 			(xy 370.84 217.17) (xy 370.84 214.63)
 		)
 		(stroke
@@ -16983,6 +16973,16 @@
 			(type default)
 		)
 		(uuid "be6730ff-17f0-4082-baed-5dc2afeefa52")
+	)
+	(wire
+		(pts
+			(xy 240.03 163.83) (xy 247.65 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be910159-2dad-40dd-a6e6-bb4b713e07c4")
 	)
 	(wire
 		(pts
@@ -17764,16 +17764,6 @@
 		)
 		(uuid "1fd45f18-0a9a-42cf-9176-545c73384eac")
 	)
-	(label "PMOD_SS"
-		(at 401.3056 65.9554 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "21cd2d8a-73dd-43fc-8688-220ad6c05b99")
-	)
 	(label "PIN3"
 		(at 309.88 59.69 180)
 		(effects
@@ -18074,16 +18064,6 @@
 		)
 		(uuid "5a396bd2-c151-46d4-975a-35ee9249d7aa")
 	)
-	(label "button3"
-		(at 386.08 52.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5a626fb0-b126-45de-bb33-1e4a8d1bbbbd")
-	)
 	(label "GLED"
 		(at 309.88 90.17 180)
 		(effects
@@ -18374,15 +18354,25 @@
 		)
 		(uuid "9e1ec1ea-0903-4530-a47d-c0b18e623cfa")
 	)
+	(label "PMOD_SS"
+		(at 386.08 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e9f5717-caec-48a6-9c21-e59a8873d4a2")
+	)
 	(label "button3"
-		(at 231.14 162.56 180)
+		(at 233.68 163.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "a083f87e-b88e-44ab-9175-ac000aaaea16")
+		(uuid "a26750b0-ef49-47a7-a18b-0bdd48be6649")
 	)
 	(label "SDA"
 		(at 386.08 97.79 0)
@@ -18723,6 +18713,16 @@
 			(justify right bottom)
 		)
 		(uuid "e3c06996-a725-403d-8d8c-01dd1fb21ee6")
+	)
+	(label "button3"
+		(at 386.08 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6487601-f52c-4ce6-bd69-bde64677bfe3")
 	)
 	(label "FT_CLK"
 		(at 46.99 74.93 180)
@@ -19136,6 +19136,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C398345"
+			(at 171.45 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "883770c6-430b-4c7c-abd6-bc78ba3ea86d")
 		)
@@ -19257,7 +19266,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal"
+		(property "Footprint" "footprints:PinSocket_2x06_P2.54mm_Horizontal_edit"
 			(at 311.15 218.44 0)
 			(effects
 				(font
@@ -19285,6 +19294,15 @@
 			)
 		)
 		(property "JLCPCB" "C5333437"
+			(at 311.15 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5333437"
 			(at 311.15 218.44 0)
 			(effects
 				(font
@@ -20176,6 +20194,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5875752"
+			(at 283.21 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "932034ba-6906-4887-b7da-88e930dd70f0")
 		)
@@ -20247,6 +20274,15 @@
 			)
 		)
 		(property "JLCPCB" "C49851"
+			(at 34.29 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C49851"
 			(at 34.29 257.81 0)
 			(effects
 				(font
@@ -21492,6 +21528,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C32713268"
+			(at 278.13 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4207f37c-433a-4dbd-a09c-ca6a5d784e21")
 		)
@@ -21946,6 +21991,15 @@
 			)
 		)
 		(property "JLCPCB" "C455095"
+			(at 212.09 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C455095"
 			(at 212.09 163.83 0)
 			(effects
 				(font
@@ -23717,7 +23771,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27bdce40-411e-4f1a-8558-f221e3ca4542")
-		(property "Reference" "XTAL1"
+		(property "Reference" "OSC1"
 			(at 162.56 119.38 0)
 			(effects
 				(font
@@ -23725,7 +23779,7 @@
 				)
 			)
 		)
-		(property "Value" "ASE-12.000MHZ-LC-T"
+		(property "Value" "OSC"
 			(at 162.56 121.92 0)
 			(effects
 				(font
@@ -23771,6 +23825,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C596950"
+			(at 129.54 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "16730750-1b84-4026-a554-27a3f00fb455")
 		)
@@ -23786,7 +23849,7 @@
 		(instances
 			(project ""
 				(path "/50335952-4638-4f81-8dda-af39f2bd876f"
-					(reference "XTAL1")
+					(reference "OSC1")
 					(unit 1)
 				)
 			)
@@ -24506,6 +24569,72 @@
 			(project "First_try"
 				(path "/50335952-4638-4f81-8dda-af39f2bd876f"
 					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+1V2")
+		(at 238.76 156.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3000ac40-d7c0-4a75-a1c5-eab8c6a3bf50")
+		(property "Reference" "#PWR039"
+			(at 242.57 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 235.712 156.972 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V2\""
+			(at 238.76 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0765e57-b240-45eb-983f-15435829e68d")
+		)
+		(instances
+			(project "First_try"
+				(path "/50335952-4638-4f81-8dda-af39f2bd876f"
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -25280,6 +25409,15 @@
 		)
 		(property "LCSC Part" "C82344"
 			(at 231.14 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C82344"
+			(at 231.14 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26135,7 +26273,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:C_conn"
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A"
 			(at 22.86 33.02 0)
 			(effects
 				(font
@@ -26165,6 +26303,15 @@
 			)
 		)
 		(property "JLCPCB" "C2689844"
+			(at 22.86 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2689844"
 			(at 22.86 33.02 90)
 			(effects
 				(font
@@ -26352,6 +26499,15 @@
 			)
 		)
 		(property "JLCPCB" "C190271"
+			(at 135.89 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C190271"
 			(at 135.89 34.29 0)
 			(effects
 				(font
@@ -27217,6 +27373,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C82155"
+			(at 48.26 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1e93a5d6-cf73-4fb9-84da-5a63e7514129")
 		)
@@ -27582,6 +27747,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C71631"
+			(at 316.23 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ce6b4781-9427-449f-871e-7573de192b00")
 		)
@@ -27672,7 +27846,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "52140019-35ef-42fd-852d-b00caa56bd03")
 		(property "Reference" "#PWR071"
 			(at 289.56 39.37 0)
@@ -27786,6 +27959,15 @@
 		)
 		(property "LCSC Part" "C82155"
 			(at 48.26 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C82155"
+			(at 48.26 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27935,6 +28117,15 @@
 			)
 		)
 		(property "JLPCPCB" "C110760"
+			(at 120.65 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C110760"
 			(at 120.65 41.91 90)
 			(effects
 				(font
@@ -29352,6 +29543,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C32713268"
+			(at 278.13 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0384aece-acd9-4627-9cb4-71ef883870ad")
 		)
@@ -29362,83 +29562,6 @@
 			(project ""
 				(path "/50335952-4638-4f81-8dda-af39f2bd876f"
 					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 250.19 162.56 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "61872e8a-2cae-4c15-ba29-860b24c8f440")
-		(property "Reference" "SW4"
-			(at 250.19 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 250.19 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "footprints:SW_push"
-			(at 250.19 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 250.19 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 250.19 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB" "C455095"
-			(at 250.19 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e77206a5-0c1f-41bd-b3f5-1a02d4463e06")
-		)
-		(pin "1"
-			(uuid "643dd048-8068-42f5-a288-5aaf6c776b7b")
-		)
-		(instances
-			(project "First_try"
-				(path "/50335952-4638-4f81-8dda-af39f2bd876f"
-					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -30282,6 +30405,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5259068"
+			(at 227.33 204.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "703f5414-6aa2-4688-9722-bfff17efebc5")
 		)
@@ -30292,6 +30424,92 @@
 			(project ""
 				(path "/50335952-4638-4f81-8dda-af39f2bd876f"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 252.73 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74d648f7-b261-4705-b1c0-e59d4d23334e")
+		(property "Reference" "SW4"
+			(at 252.73 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 252.73 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:SW_push"
+			(at 252.73 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 252.73 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C455095"
+			(at 252.73 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C455095"
+			(at 252.73 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f219d366-8d30-4673-97f4-e5ed8d9658cd")
+		)
+		(pin "1"
+			(uuid "e7059684-a861-47f8-a45b-d0003a299dad")
+		)
+		(instances
+			(project "First_try"
+				(path "/50335952-4638-4f81-8dda-af39f2bd876f"
+					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -30806,7 +31024,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LED-SMD_L1.0-W0.5-RD"
+		(property "Footprint" "footprints:LED-SMD_L1.0-W0.5-RD"
 			(at 375.92 142.875 0)
 			(effects
 				(font
@@ -30834,6 +31052,15 @@
 			)
 		)
 		(property "JLCPCB" "C5875752"
+			(at 375.92 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5875752"
 			(at 375.92 138.43 90)
 			(effects
 				(font
@@ -30986,6 +31213,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C4944045"
+			(at 93.98 224.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c5081550-a6ee-4202-853d-25fdf82d1540")
 		)
@@ -31057,6 +31293,15 @@
 			)
 		)
 		(property "JLCPCB" "C2071183"
+			(at 165.1 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2071183"
 			(at 165.1 199.39 0)
 			(effects
 				(font
@@ -32462,6 +32707,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1002"
+			(at 67.31 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a0f56779-fc1a-4d46-8e50-613cd161ce24")
 		)
@@ -32732,6 +32986,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C273394"
+			(at 85.09 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "08605399-454b-4404-a196-e9e6a9195a19")
 		)
@@ -32807,6 +33070,15 @@
 		)
 		(property "LCSC Part" "C71631"
 			(at 224.79 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C71631"
+			(at 240.03 262.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34055,6 +34327,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C51997"
+			(at 46.99 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d581404c-6139-48d7-90d4-a77eb440d2ee")
 		)
@@ -34823,6 +35104,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5366382"
+			(at 283.21 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "82ca8f45-13f2-4b5f-a21d-f85f71d1e3f3")
 		)
@@ -35416,6 +35706,15 @@
 			)
 		)
 		(property "JLCPCB" "C2862074"
+			(at 220.98 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2862074"
 			(at 220.98 127 0)
 			(effects
 				(font
@@ -37009,6 +37308,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5588281"
+			(at 283.21 189.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f312cbb5-ed00-46e8-8076-813aa5b5e83c")
 		)
@@ -37208,6 +37516,15 @@
 			)
 		)
 		(property "JLCPB" "C32713268"
+			(at 278.13 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C32713268"
 			(at 278.13 212.09 0)
 			(effects
 				(font
@@ -37582,6 +37899,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C92789"
+			(at 149.86 215.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0de409de-6d22-4329-b3da-8d010c5c1ac1")
 		)
@@ -37722,6 +38048,15 @@
 			)
 		)
 		(property "JLCPCB" "C5354973"
+			(at 283.21 179.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5354973"
 			(at 283.21 179.07 90)
 			(effects
 				(font
@@ -38029,6 +38364,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C77041"
+			(at 151.13 257.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7caa1f45-54d9-4712-8425-6058ddd8135a")
 		)
@@ -38100,6 +38444,15 @@
 		)
 		(property "LCSC Part" "C92789"
 			(at 251.46 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C92789"
+			(at 236.22 215.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38501,6 +38854,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5393554"
+			(at 323.85 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c799ea15-65ff-48d2-af08-019e631d67e8")
 		)
@@ -38517,72 +38879,6 @@
 			(project ""
 				(path "/50335952-4638-4f81-8dda-af39f2bd876f"
 					(reference "C5393554")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+1V2")
-		(at 236.22 154.94 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a9fcfd67-f023-4929-864b-5f4c90475888")
-		(property "Reference" "#PWR039"
-			(at 240.03 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 233.172 155.702 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 236.22 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 236.22 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+1V2\""
-			(at 236.22 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f83f2828-338b-4451-8037-2666d4df1f74")
-		)
-		(instances
-			(project "First_try"
-				(path "/50335952-4638-4f81-8dda-af39f2bd876f"
-					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -38648,72 +38944,6 @@
 			(project "First_try"
 				(path "/50335952-4638-4f81-8dda-af39f2bd876f"
 					(reference "#PWR0103")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 259.08 163.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ac49bb36-8492-4295-9d3a-e661d4de75d6")
-		(property "Reference" "#PWR040"
-			(at 259.08 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 259.08 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 259.08 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 259.08 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 259.08 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "49492fcd-339e-4f59-bcdf-6da956d6fc83")
-		)
-		(instances
-			(project "First_try"
-				(path "/50335952-4638-4f81-8dda-af39f2bd876f"
-					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -39229,6 +39459,15 @@
 			)
 		)
 		(property "JLCPCB" "C49851"
+			(at 30.48 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C49851"
 			(at 30.48 224.79 0)
 			(effects
 				(font
@@ -39797,6 +40036,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C4944045"
+			(at 97.79 257.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "867c8182-b781-4cc0-83fc-5e5b477a46d1")
 		)
@@ -39866,6 +40114,15 @@
 			)
 		)
 		(property "JLCPCB" "C455095"
+			(at 392.43 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C455095"
 			(at 392.43 123.19 0)
 			(effects
 				(font
@@ -41744,6 +42001,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2844756"
+			(at 161.29 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0a8b8c2d-3b8a-4ce4-a900-d5663a84cfc2")
 		)
@@ -42501,6 +42767,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25957"
+			(at 74.93 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "36846c83-681e-48b0-b1a0-67e9e2553781")
 		)
@@ -42511,228 +42786,6 @@
 			(project ""
 				(path "/50335952-4638-4f81-8dda-af39f2bd876f"
 					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_JLCPCB-Resistors:0603,10kΩ")
-		(at 237.49 158.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e36131e6-f304-4feb-bb15-a288e59538a5")
-		(property "Reference" "R3"
-			(at 239.268 157.988 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10kΩ"
-			(at 237.49 158.75 90)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:R_0603"
-			(at 235.712 158.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/°C ±1% 10kΩ 0603 Chip Resistor - Surface Mount ROHS"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25804"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" "51181774"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.004USD"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" "SMT"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Attrition Qty" "10"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" "Basic Component"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "0603WAF1002T5E"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Resistance" "10kΩ"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Power(Watts)" "100mW"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" "Thick Film Resistors"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Overload Voltage (Max)" "75V"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "±1%"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 237.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "696970b3-1a09-474d-8804-8b974b075f44")
-		)
-		(pin "2"
-			(uuid "02461483-9ff7-460f-bb9a-9bee84995bbb")
-		)
-		(instances
-			(project "First_try"
-				(path "/50335952-4638-4f81-8dda-af39f2bd876f"
-					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -43287,6 +43340,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5875752"
+			(at 76.2 20.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f68e859c-8260-4f45-8666-63a15693bcec")
 		)
@@ -43356,6 +43418,15 @@
 			)
 		)
 		(property "JLCPB" "C32713268"
+			(at 278.13 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C32713268"
 			(at 278.13 238.76 0)
 			(effects
 				(font
@@ -43507,6 +43578,72 @@
 			(project "First_try"
 				(path "/50335952-4638-4f81-8dda-af39f2bd876f"
 					(reference "TP18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 261.62 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8905f61-4663-4327-bd1c-7c306e45892d")
+		(property "Reference" "#PWR040"
+			(at 261.62 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 261.62 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.62 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 261.62 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bbd04e2e-0bdb-48f0-a552-53790f2b9a43")
+		)
+		(instances
+			(project "First_try"
+				(path "/50335952-4638-4f81-8dda-af39f2bd876f"
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -43705,6 +43842,228 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:0603,10kΩ")
+		(at 240.03 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e9906960-e0c0-4367-86b9-901e9c099541")
+		(property "Reference" "R3"
+			(at 241.808 159.258 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 240.03 160.02 90)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0603"
+			(at 238.252 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/°C ±1% 10kΩ 0603 Chip Resistor - Surface Mount ROHS"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "51181774"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.004USD"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Process" "SMT"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "0603WAF1002T5E"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Resistance" "10kΩ"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power(Watts)" "100mW"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Overload Voltage (Max)" "75V"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 240.03 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0fc1a24e-5f01-489f-b5f5-c01f5f3409d9")
+		)
+		(pin "2"
+			(uuid "3e3eeda9-d59d-403b-8fc2-cb9818859f7d")
+		)
+		(instances
+			(project "First_try"
+				(path "/50335952-4638-4f81-8dda-af39f2bd876f"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 283.21 265.43 270)
 		(unit 1)
@@ -43841,6 +44200,15 @@
 			)
 		)
 		(property "JLCPCB" "C727112"
+			(at 160.02 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C727112"
 			(at 160.02 233.68 0)
 			(effects
 				(font
@@ -44207,6 +44575,15 @@
 			)
 		)
 		(property "JLCPCB" "C455095"
+			(at 172.72 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C455095"
 			(at 172.72 163.83 0)
 			(effects
 				(font
@@ -44959,6 +45336,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C32713268"
+			(at 278.13 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "53004cf1-2dbe-4b0e-9ef5-b19fa124b45c")
 		)
@@ -45028,6 +45414,15 @@
 			)
 		)
 		(property "JLCPB" "C32713268"
+			(at 278.13 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C32713268"
 			(at 278.13 265.43 0)
 			(effects
 				(font
@@ -45396,6 +45791,15 @@
 			)
 		)
 		(property "JLCPCB" "C24980"
+			(at 302.26 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C24980"
 			(at 302.26 107.95 90)
 			(effects
 				(font
@@ -45972,7 +46376,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Horizontal"
+		(property "Footprint" "footprints:PinSocket_2x04_P2.54mm_Horizontal_edit"
 			(at 360.68 217.17 0)
 			(effects
 				(font
@@ -46000,6 +46404,15 @@
 			)
 		)
 		(property "JLCPCB" "C7529541"
+			(at 360.68 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7529541"
 			(at 360.68 217.17 0)
 			(effects
 				(font

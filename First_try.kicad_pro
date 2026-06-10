@@ -58,24 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "hole_clearance|196040801|28478700|aa37b95b-9501-47a3-b2a1-2c3bd9fe7f1e|ee436ea5-b234-4144-a8aa-291fb5906128",
-          ""
-        ],
-        [
-          "hole_clearance|196040801|28478700|ab6beea7-86af-4029-8054-07a96b2a90af|ee436ea5-b234-4144-a8aa-291fb5906128",
-          ""
-        ],
-        [
-          "hole_clearance|202140801|28478700|38cb84df-3cce-4424-b411-e53c99efbe63|cd6047a9-5fd3-4ca9-b74e-3c5cfb6e62e6",
-          ""
-        ],
-        [
-          "hole_clearance|202140801|28478700|66e2895d-9ba5-4489-87e6-796a2dd7968b|cd6047a9-5fd3-4ca9-b74e-3c5cfb6e62e6",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },

@@ -13966,6 +13966,16 @@
 		)
 		(uuid "e0951c78-f7b0-4c16-a7b8-ffff1842c624")
 	)
+	(text "active low"
+		(exclude_from_sim no)
+		(at 280.416 152.146 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e5064479-b351-4d66-b3ed-6c07e2ef1ec7")
+	)
 	(text "FLASH\n"
 		(exclude_from_sim no)
 		(at 248.666 32.766 0)
@@ -32656,7 +32666,7 @@
 		(dnp no)
 		(uuid "8011c6fe-c06a-4ecb-94be-4b5e7be90dfb")
 		(property "Reference" "L3"
-			(at 73.533 44.958 0)
+			(at 75.438 51.308 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32664,7 +32674,7 @@
 			)
 		)
 		(property "Value" "GZ1608D601TF"
-			(at 73.66 47.244 0)
+			(at 74.422 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37931,7 +37941,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a5360069-0e1d-4c91-a945-2375c6e7b148")
 		(property "Reference" "TP3"
 			(at 66.04 44.9579 0)
@@ -37943,7 +37952,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 66.04 47.4979 0)
+			(at 62.992 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -1,0 +1,44 @@
+# CLOCK
+set_io clk_12 20
+
+# SPI FLASH
+set_io spi0_mosi 17
+set_io spi0_miso 14
+set_io spi0_sclk 15
+set_io spi0_cs0 16
+set_io spi0_io2  19
+set_io spi0_io3  18
+
+# OLED
+set_io spi1_mosi 32
+set_io spi1_cs0 35
+set_io spi1_dc 36
+set_io spi1_res 34
+set_io spi1_vccen 31
+set_io spi1_pmoden 28
+set_io spi1_sclk 27
+
+# I2C PMOD
+set_io i2c0_sda 12
+set_io i2c0_scl 13
+
+# I2C INA226 sensors
+set_io i2c1_sda 26
+set_io i2c1_scl 25
+
+# set_io lcd_nrst 34
+# set_io lcd_dc 36
+
+# LEDS
+set_io d1 21
+set_io d2 23
+set_io d3 38
+set_io d4 43
+
+set_io RGB0 39
+set_io RGB1 40
+set_io RGB2 41
+
+# serial
+set_io RX 11
+set_io TX 10

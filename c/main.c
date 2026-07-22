@@ -5,39 +5,45 @@
 
 #include <stdio.h>
 #include "up5k_riscv.h"
-// #include "acia.h"
-#include "printf.h"
-//#include "spi.h"
-//#include "flash.h"
+//  #include "acia.h"
+// #include "printf.h"
+//  #include "spi.h"
+//  #include "flash.h"
 #include "clkcnt.h"
-// #include "ili9341.h"
-//#include "i2c.h"
-#include "oledrgb.h"
-#include "ina226.h"
+//  #include "ili9341.h"
+//  #include "i2c.h"
+//  #include "oledrgb.h"
+//  #include "ina226.h"
+// #include "dhry.h"
+
+#define RED 0xB
+#define ORANGE 0x7
+#define GREEN 0xE
 
 /*
  * main... duh
  */
 void main()
 {
+
 	// uint32_t cnt, spi_id, i, j;
 
 	/* test both SPI ports */
 	// spi_init(SPI0);       // Mode 0 for Flash
-	//spi_init_mode3(SPI1); // Mode 3 for OLED
+	// spi_init_mode3(SPI1); // Mode 3 for OLED
 
 	/* get spi flash id */
 	// flash_init(SPI0);	// wake up the flash chip
 	// spi_id = flash_id(SPI0);
 	// printf("spi flash id: 0x%08X\n\r", spi_id);
 
-	oled_init();
+	/*oled_init();
 	oled_clear(BLACK);
 
 	//i2c_init(I2C1);
 
 	/* Program calibration register for both INA226 sensors */
-	ina226_init(I2C1, 0x40);
+	/*ina226_init(I2C1, 0x40);
 	ina226_init(I2C1, 0x41);
 
 	char buf[32];
@@ -52,38 +58,55 @@ void main()
 		int32_t sum_p41 = 0;
 
 		/* Average 10 measurements */
-		for (i = 0; i < 10; i++)
+	/*for (i = 0; i < 10; i++)
+	{
+		sum_v40 += ina226_read_bus_mv(I2C1, 0x40);
+		sum_p40 += ina226_read_power_uw(I2C1, 0x40);
+
+		sum_v41 += ina226_read_bus_mv(I2C1, 0x41);
+		sum_p41 += ina226_read_power_uw(I2C1, 0x41);
+
+		clkcnt_delayms(50);
+	}
+
+	int32_t v40_mv = sum_v40 / 10;
+	int32_t p40_uw = sum_p40 / 10;
+
+	int32_t v41_mv = sum_v41 / 10;
+	int32_t p41_uw = sum_p41 / 10;
+
+	oled_clear(BLACK);
+
+	sprintf(buf, "1.2V: %ld.%02ldV", v40_mv / 1000, (v40_mv % 1000) / 10);
+	oled_drawstr(0, 0, buf, WHITE, BLACK);
+
+	sprintf(buf, "%ld.%03ldmW", p40_uw / 1000, p40_uw % 1000);
+	oled_drawstr(0, 16, buf, YELLOW, BLACK);
+
+	sprintf(buf, "3.3V: %ld.%02ldV", v41_mv / 1000, (v41_mv % 1000) / 10);
+	oled_drawstr(0, 32, buf, WHITE, BLACK);
+
+	sprintf(buf, "%ld.%03ldmW", p41_uw / 1000, p41_uw % 1000);
+	oled_drawstr(0, 48, buf, YELLOW, BLACK);
+
+	clkcnt_delayms(1000);
+}*/
+
+	while (1)
+	{
+		uint32_t button_state = button_addr;
+		uint8_t b1_pressed = !((button_state >> 0) & 1);
+
+		gp_out = RED;
+
+		if (b1_pressed)
 		{
-			sum_v40 += ina226_read_bus_mv(I2C1, 0x40);
-			sum_p40 += ina226_read_power_uw(I2C1, 0x40);
-
-			sum_v41 += ina226_read_bus_mv(I2C1, 0x41);
-			sum_p41 += ina226_read_power_uw(I2C1, 0x41);
-
-			clkcnt_delayms(50);
+			clkcnt_delayms(1000);
+			gp_out = ORANGE;
+			clkcnt_delayms(2000);
+			gp_out = GREEN;
+			clkcnt_delayms(5000);
 		}
-
-		int32_t v40_mv = sum_v40 / 10;
-		int32_t p40_uw = sum_p40 / 10;
-
-		int32_t v41_mv = sum_v41 / 10;
-		int32_t p41_uw = sum_p41 / 10;
-
-		oled_clear(BLACK);
-
-		sprintf(buf, "1.2V: %ld.%02ldV", v40_mv / 1000, (v40_mv % 1000) / 10);
-		oled_drawstr(0, 0, buf, WHITE, BLACK);
-
-		sprintf(buf, "%ld.%03ldmW", p40_uw / 1000, p40_uw % 1000);
-		oled_drawstr(0, 16, buf, YELLOW, BLACK);
-
-		sprintf(buf, "3.3V: %ld.%02ldV", v41_mv / 1000, (v41_mv % 1000) / 10);
-		oled_drawstr(0, 32, buf, WHITE, BLACK);
-
-		sprintf(buf, "%ld.%03ldmW", p41_uw / 1000, p41_uw % 1000);
-		oled_drawstr(0, 48, buf, YELLOW, BLACK);
-
-		clkcnt_delayms(1000);
 	}
 
 #if 0
@@ -91,12 +114,12 @@ void main()
 	{
 		uint8_t read[256];
 		flash_read(SPI0, read, 0, 256);
-		for(i=0;i<256;i+=8)
+		for (i = 0; i < 256; i += 8)
 		{
 			printf("0x%02X: ", i);
-			for(j=0;j<8;j++)
+			for (j = 0; j < 8; j++)
 			{
-				printf("0x%02X ", read[i+j]);
+				printf("0x%02X ", read[i + j]);
 			}
 			printf("\n\r");
 		}
@@ -104,23 +127,23 @@ void main()
 #endif
 
 	/* Test LCD */
-/*	ili9341_init(SPI1);
-	printf("LCD initialized\n\r");
-	
-#if 1
-	// color fill + text fonts
-	ili9341_fillRect(20, 20, 200, 280, ILI9341_MAGENTA);
-	ili9341_drawstr(120-44, (160-12*8), "Hello World", ILI9341_WHITE, ILI9341_MAGENTA);
-	
-	// test font
-	for(i=0;i<256;i+=16)
-		for(j=0;j<16;j++)
-			ili9341_drawchar((120-8*8)+(j*8), (160-8*8)+(i/2), i+j,
-				ILI9341_GREEN, ILI9341_BLACK);
-	
-	clkcnt_delayms(1000);
-#endif */
-	
+	/*	ili9341_init(SPI1);
+		printf("LCD initialized\n\r");
+
+	#if 1
+		// color fill + text fonts
+		ili9341_fillRect(20, 20, 200, 280, ILI9341_MAGENTA);
+		ili9341_drawstr(120-44, (160-12*8), "Hello World", ILI9341_WHITE, ILI9341_MAGENTA);
+
+		// test font
+		for(i=0;i<256;i+=16)
+			for(j=0;j<16;j++)
+				ili9341_drawchar((120-8*8)+(j*8), (160-8*8)+(i/2), i+j,
+					gp_outILI9341_GREEN, ILI9341_BLACK);
+
+		clkcnt_delayms(1000);
+	#endif */
+
 #if 0
 	/* test colored lines */
 	{
@@ -138,14 +161,14 @@ void main()
 				
 				ili9341_hsv2rgb(rgb, hsv);
 				color = ili9342_Color565(rgb[0],rgb[1],rgb[2]);
-		#if 0
+#if 0
 				ili9341_drawLine(i, 0, ILI9341_TFTWIDTH-1, i, color);
 				ili9341_drawLine(ILI9341_TFTWIDTH-1, i, ILI9341_TFTWIDTH-1-i, ILI9341_TFTWIDTH-1, color);
 				ili9341_drawLine(ILI9341_TFTWIDTH-1-i, ILI9341_TFTWIDTH-1, 0, ILI9341_TFTWIDTH-1-i, color);
 				ili9341_drawLine(0, ILI9341_TFTWIDTH-1-i, i, 0, color);
-		#else
+#else
 				ili9341_drawFastHLine(0, i, 240, color);
-		#endif
+#endif
 			}
 		}
 	}
@@ -169,26 +192,26 @@ void main()
 #endif
 
 	/* Test I2C */
-/*	i2c_init(I2C0);
-	printf("I2C0 Initialized\n\r");
+	/*	i2c_init(I2C0);
+		printf("I2C0 Initialized\n\r");
 
-	cnt = 0;
-	while(1)
-	{
-		gp_out = (gp_out&~(7<<17))|((cnt&7)<<17);
-		
-		if(i2c_tx(I2C0, 0x1A, (uint8_t *)&cnt, 2))
-			acia_putc('x');
-		else
-			acia_putc('.');
-		
-		cnt++;
-		
-#if 0
-		//simple echo
-		if((c=acia_getc()) != EOF)
-			acia_putc(c);
-#endif		
-		clkcnt_delayms(1000);
-	} */
+		cnt = 0;
+		while(1)
+		{
+			gp_out = (gp_out&~(7<<17))|((cnt&7)<<17);
+
+			if(i2c_tx(I2C0, 0x1A, (uint8_t *)&cnt, 2))
+				acia_putc('x');
+			else
+				acia_putc('.');
+
+			cnt++;
+
+	#if 0
+			//simple echo
+			if((c=acia_getc()) != EOF)
+				acia_putc(c);
+	#endif
+			clkcnt_delayms(1000);
+		} */
 }

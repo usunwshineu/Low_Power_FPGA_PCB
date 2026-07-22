@@ -6,7 +6,7 @@
 `default_nettype none
 
 module system(
-	input	clk24,			// clock, reset
+	input	clk_12,			// clock, reset
 			reset,
 	
 	input	RX,				// serial
@@ -27,7 +27,9 @@ module system(
 
 	inout	i2c1_sda,		// I2C core 1
 			i2c1_scl,
-	
+
+	input 	[2:0] buttons,
+
 	output reg [31:0] gp_out
 );
 	// CPU
@@ -41,17 +43,18 @@ module system(
 	picorv32 #(
 		.PROGADDR_RESET(32'h 0000_0000),	// start or ROM
 		.STACKADDR(32'h 1001_0000),			// end of SPRAM
-		.BARREL_SHIFTER(0),
+		.BARREL_SHIFTER(1),
 		.COMPRESSED_ISA(0),
 		.ENABLE_COUNTERS(0),
-		.ENABLE_MUL(0),
-		.ENABLE_DIV(0),
+		//.ENABLE_MUL(1),
+		.ENABLE_FAST_MUL(1),
+		.ENABLE_DIV(1),
 		.ENABLE_IRQ(0),
 		.ENABLE_IRQ_QREGS(0),
 		.CATCH_MISALIGN(0),
 		.CATCH_ILLINSN(0)
 	) cpu_I (
-		.clk       (clk24),
+		.clk       (clk_12),
 		.resetn    (~reset),
 		.mem_valid (mem_valid),
 		.mem_instr (mem_instr),
@@ -69,18 +72,19 @@ module system(
 	wire ser_sel = (mem_addr[31:28]==4'h3)&mem_valid ? 1'b1 : 1'b0;
 	wire wbb_sel = (mem_addr[31:28]==4'h4)&mem_valid ? 1'b1 : 1'b0;
 	wire cnt_sel = (mem_addr[31:28]==4'h5)&mem_valid ? 1'b1 : 1'b0;
+	wire btn_sel = (mem_addr[31:28]==4'h6)&mem_valid ? 1'b1 : 1'b0;
 	
 	// 2k x 32 ROM
 	reg [31:0] rom[2047:0], rom_do;
 	initial
         $readmemh("rom.hex",rom);		
-	always @(posedge clk24)
+	always @(posedge clk_12)
 		rom_do <= rom[mem_addr[12:2]];
 	
 	// RAM, byte addressable
 	wire [31:0] ram_do;
 	spram_16kx32 uram(
-		.clk(clk24),
+		.clk(clk_12),
 		.sel(ram_sel),
 		.we(mem_wstrb),
 		.addr(mem_addr[15:0]),
@@ -89,7 +93,7 @@ module system(
 	);
 	
 	// GPIO
-	always @(posedge clk24)
+	always @(posedge clk_12)
 		if(gpo_sel)
 		begin
 			if(mem_wstrb[0])
@@ -105,7 +109,7 @@ module system(
 	// Serial
 	wire [7:0] ser_do;
 	acia uacia(
-		.clk(clk24),			// system clock
+		.clk(clk_12),			// system clock
 		.rst(reset),			// system reset
 		.cs(ser_sel),			// chip select
 		.we(mem_wstrb[0]),		// write enable
@@ -121,7 +125,7 @@ module system(
 	wire [7:0] wbb_do;
 	wire wbb_rdy;
 	wb_bus uwbb(
-		.clk(clk24),			// system clock
+		.clk(clk_12),			// system clock
 		.rst(reset),			// system reset
 		.cs(wbb_sel),			// chip select
 		.we(mem_wstrb[0]),		// write enable
@@ -145,7 +149,7 @@ module system(
 	
 	// Resettable clock counter
 	reg [31:0] cnt;
-	always @(posedge clk24)
+	always @(posedge clk_12)
 		if(cnt_sel & |mem_wstrb)
 		begin
 			if(mem_wstrb[0])
@@ -162,23 +166,24 @@ module system(
 	
 	// Read Mux
 	always @(*)
-		casex({cnt_sel,wbb_sel,ser_sel,gpo_sel,ram_sel,rom_sel})
-			6'b000001: mem_rdata = rom_do;
-			6'b00001x: mem_rdata = ram_do;
-			6'b0001xx: mem_rdata = gp_out;
-			6'b001xxx: mem_rdata = {{24{1'b0}},ser_do};
-			6'b01xxxx: mem_rdata = {{24{1'b0}},wbb_do};
-			6'b1xxxxx: mem_rdata = cnt;
+		casex({btn_sel,cnt_sel,wbb_sel,ser_sel,gpo_sel,ram_sel,rom_sel})
+			7'b0000001: mem_rdata = rom_do;
+			7'b000001x: mem_rdata = ram_do;
+			7'b00001xx: mem_rdata = gp_out;
+			7'b0001xxx: mem_rdata = {{24{1'b0}},ser_do};
+			7'b001xxxx: mem_rdata = {{24{1'b0}},wbb_do};
+			7'b01xxxxx: mem_rdata = cnt;
+			7'b1xxxxxx: mem_rdata = {29'b0, buttons};
 			default: mem_rdata = 32'd0;
 		endcase
 	
 	// ready flag
 	reg mem_rdy;
-	always @(posedge clk24)
+	always @(posedge clk_12)
 		if(reset)
 			mem_rdy <= 1'b0;
 		else
-			mem_rdy <= (cnt_sel|ser_sel|gpo_sel|ram_sel|rom_sel) & ~mem_rdy;
+			mem_rdy <= (btn_sel|cnt_sel|ser_sel|gpo_sel|ram_sel|rom_sel) & ~mem_rdy;
 	assign mem_ready = wbb_rdy | mem_rdy;
 
 endmodule

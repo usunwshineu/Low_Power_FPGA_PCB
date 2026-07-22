@@ -39,7 +39,8 @@ module up5k_riscv(
 	//output lcd_nrst, lcd_dc,
 	
 	// diagnostic
-	output d1, d2, d3,
+	output d1, d2, d3, d4,
+	input b1, b2, b3,
 		
 	// LED - via drivers
 	output RGB0, RGB1, RGB2
@@ -111,9 +112,9 @@ module up5k_riscv(
 	wire [31:0] gpio_o;
 	wire raw_rx, raw_tx;
 	system uut(
-		.clk24(clk),
+		.clk_12(clk),
 		.reset(reset),
-		
+	
 		.RX(raw_rx),
 		.TX(raw_tx),
 		
@@ -133,6 +134,7 @@ module up5k_riscv(
 		.i2c1_sda(i2c1_sda),
 		.i2c1_scl(i2c1_scl),
 	
+		.buttons({b3, b2, b1}),
 		.gp_out(gpio_o)
 	);
 	
@@ -174,7 +176,10 @@ module up5k_riscv(
 	
 	assign d1 = gpio_o[0];
 	//assign d2 = raw_tx;
-	
+	assign d2 = gpio_o[1];
+	assign d3 = gpio_o[2];
+	assign d4 = gpio_o[3];
+
 	// RGB LED Driver IP core
 	SB_RGBA_DRV #(
 		.CURRENT_MODE("0b1"),

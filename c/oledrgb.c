@@ -78,12 +78,6 @@ void oled_drawchar(uint8_t x, uint8_t y, char c, uint16_t fg, uint16_t bg)
     spi_cs_high(SPI1);
 }
 
-/*static void oled_data(uint8_t data)
-{
-    gp_out |= OLED_DC;
-    spi_tx_byte(SPI1, data);
-}*/
-
 void oled_init(void)
 {
     spi_init(SPI1);

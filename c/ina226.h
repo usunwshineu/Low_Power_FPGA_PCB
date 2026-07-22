@@ -4,7 +4,6 @@
 
 /*
  * 20 mOhm shunt, Current_LSB = 10 uA
- * CAL = 0.00512 / (10e-6 * 0.02) = 25600
  * Power_LSB = 25 * 10 uA = 250 uW/LSB
  */
 

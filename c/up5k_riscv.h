@@ -10,6 +10,7 @@
 
 // 32-bit parallel out
 #define gp_out (*(volatile uint32_t *)0x20000000)
+#define button_addr (*(volatile uint32_t *)0x60000000) 
 
 // 32-bit clock counter
 #define clkcnt_reg (*(volatile uint32_t *)0x50000000)
@@ -43,8 +44,8 @@ typedef struct
 	uint8_t reserved8[3];
 } SPI_TypeDef;
 
-#define SPI0 ((SPI_TypeDef *) SPI0_BASE)
-#define SPI1 ((SPI_TypeDef *) SPI1_BASE)
+#define SPI0 ((SPI_TypeDef *)SPI0_BASE)
+#define SPI1 ((SPI_TypeDef *)SPI1_BASE)
 
 // I2C cores @ BUS_ADDR74 = 0b0001 and 0b0011
 #define I2C0_BASE 0x40000040
@@ -52,36 +53,36 @@ typedef struct
 
 typedef struct
 {
-	uint32_t reserved0;			// 0 -> register numbers 
-	uint32_t reserved1;			// 1
-	uint32_t reserved2;			// 2
-	volatile uint8_t I2CSADDR;	// 3 -> slave address
+	uint32_t reserved0;		   // 0 -> register numbers
+	uint32_t reserved1;		   // 1
+	uint32_t reserved2;		   // 2
+	volatile uint8_t I2CSADDR; // 3 -> slave address
 	uint8_t reserved3[3];
-	uint32_t reserved4;			// 4
-	uint32_t reserved5;			// 5
-	volatile uint8_t I2CIRQ;	// 6 -> interrupt status flags
+	uint32_t reserved4;		 // 4
+	uint32_t reserved5;		 // 5
+	volatile uint8_t I2CIRQ; // 6 -> interrupt status flags
 	uint8_t reserved6[3];
-	volatile uint8_t I2CIRQEN;	// 7 -> enables interrupt source
+	volatile uint8_t I2CIRQEN; // 7 -> enables interrupt source
 	uint8_t reserved7[3];
-	volatile uint8_t I2CCR1;	// 8 -> enables controller and operating modes
+	volatile uint8_t I2CCR1; // 8 -> enables controller and operating modes
 	uint8_t reserved8[3];
-	volatile uint8_t I2CCMDR;	// 9 -> generates START, STOP, R/W operations
+	volatile uint8_t I2CCMDR; // 9 -> generates START, STOP, R/W operations
 	uint8_t reserved9[3];
-	volatile uint8_t I2CBRLSB;	// A -> lower 8 bits of clk divider
+	volatile uint8_t I2CBRLSB; // A -> lower 8 bits of clk divider
 	uint8_t reservedA[3];
-	volatile uint8_t I2CBRMSB;	// B -> upper 8 bits of clk divider
+	volatile uint8_t I2CBRMSB; // B -> upper 8 bits of clk divider
 	uint8_t reservedB[3];
-	volatile uint8_t I2CSR;		// C -> status reg: ACK, busy etc
+	volatile uint8_t I2CSR; // C -> status reg: ACK, busy etc
 	uint8_t reservedC[3];
-	volatile uint8_t I2CTXDR;	// D -> byte to transmit
+	volatile uint8_t I2CTXDR; // D -> byte to transmit
 	uint8_t reservedD[3];
-	volatile uint8_t I2CRXDR;	// E -> byte received
+	volatile uint8_t I2CRXDR; // E -> byte received
 	uint8_t reservedE[3];
-	volatile uint8_t I2CGCDR;	// F -> general call data register for broadcasting commands
+	volatile uint8_t I2CGCDR; // F -> general call data register for broadcasting commands
 	uint8_t reservedF[3];
 } I2C_TypeDef;
 
-#define I2C0 ((I2C_TypeDef *) I2C0_BASE)
-#define I2C1 ((I2C_TypeDef *) I2C1_BASE)
+#define I2C0 ((I2C_TypeDef *)I2C0_BASE)
+#define I2C1 ((I2C_TypeDef *)I2C1_BASE)
 
 #endif

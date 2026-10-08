@@ -18,7 +18,7 @@ The board contains:
 * 3 buttons
 * 4 LEDs and 1 RGB LED
   
-For different SPI modes you can check <a href="https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02010-1-8-iCE40-I2C-and-SPI-Hardened-IP-User-Guide.pdf" target="this document">.
+For different SPI modes you can check <a href="https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02010-1-8-iCE40-I2C-and-SPI-Hardened-IP-User-Guide.pdf">this document.
 
 The final assembled board:
 <img width="1200" height="1159" alt="Assembled" src="https://github.com/user-attachments/assets/65e52ea7-b1c1-4008-889b-031e828e067f" />
@@ -38,7 +38,8 @@ Replace module.v, module.json, module.asc, module.bin, and pins.pcf with the cor
 
 ## Adding a microprocessor
 
-I used this particular RISC V system, which was built specifically for iCE40UP5k FPGAs: <a href="https://github.com/emeb/up5k_riscv/blame/master/README.md">.
+I used this particular RISC V system, which was built specifically for iCE40UP5k FPGAs: <a href="https://github.com/emeb/up5k_riscv/blame/master/README.md">up5k_riscv.
+
 I modified the icestorm/up5k_riscv.pcf file with my own pins. Any other modified files were added to this repository.
 In main.c file I wrote a code to read the power consumption (using I2C communication with the INA226 sensors) and display it on an OLED (SPI communication). 
 

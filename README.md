@@ -18,7 +18,7 @@ The board contains:
 * 3 buttons
 * 4 LEDs and 1 RGB LED
   
-For different SPI modes you can check <a href="https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02010-1-8-iCE40-I2C-and-SPI-Hardened-IP-User-Guide.pdf">.
+For different SPI modes you can check <a href="https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02010-1-8-iCE40-I2C-and-SPI-Hardened-IP-User-Guide.pdf" target="this document">.
 
 The final assembled board:
 <img width="1200" height="1159" alt="Assembled" src="https://github.com/user-attachments/assets/65e52ea7-b1c1-4008-889b-031e828e067f" />
